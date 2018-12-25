@@ -58,7 +58,7 @@ public class Account {
 
     double calculatePrincipalWithCompoundInterest(){
 
-        return Principal* (Math.pow((1+Rate),Year));
+        return Principal* (Math.pow((1+(Rate/100)),Year));
 
     }
 
