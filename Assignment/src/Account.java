@@ -1,53 +1,22 @@
 import static java.lang.System.*;
 
 public class Account {
+
     private String name;
     private double Principal;
     private double Rate;
     private int Year;
     private String Email;
 
-    //setter and getter mathods//
+    public Account(String name,double Principal,double Rate,int Year,String Email){
+        this.name= name;
+        this.Principal=Principal;
+        this.Rate= Rate;
+        this.Year=Year;
+        this.Email=Email;
 
-    public String getName() {
-        return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getPrincipal() {
-        return Principal;
-    }
-
-    public void setPrincipal(double principal) {
-        Principal = principal;
-    }
-
-    public double getRate() {
-        return Rate;
-    }
-
-    public void setRate(double rate) {
-        Rate = rate;
-    }
-
-    public int getYear() {
-        return Year;
-    }
-
-    public void setYear(int year) {
-        Year = year;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
-    }
 
     //all methods starts//
 
@@ -80,5 +49,9 @@ public class Account {
 
     void changeEmail(String newEmail){
         Email= newEmail;
+    }
+
+    public String getEmail() {
+        return Email;
     }
 }
